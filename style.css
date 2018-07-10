@@ -130,15 +130,18 @@ img {
 
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 100px) {
-
+@media (max-width: 576x) {
+  .footer-background {
+    padding-top: 50px;
+    height: 470px;
+  }
  }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
   .footer-background {
     padding-top: 50px;
-    height: 450px;
+    height: 470px;
   }
  }
 
