@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Orbital Mechanics</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+<body data-spy="scroll" data-target="#navbar-site" data-offset="70">
+
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded text-right ml-nav-orbital-mechanics" id="navbar-site">
+    <div class="container">
+      <div class="navbar-nav flex-column">
+        <a class="nav-item nav-link" href="#circular">Circular Motion</a>
+        <a class="nav-item nav-link" href="#kepler">Kepler's Law of Planetary Motion</a>
+        <a class="nav-item nav-link" href="#retrograde">Retrograge Motion</a>
+        <a class="nav-item nav-link" href="#energy">Energy</a>
+        <a class="nav-item nav-link" href="#escape">Escape Velocity</a>
+        <a class="nav-item nav-link" href="#altitude">Changing Orbital Altitude</a>
+        <a class="nav-item nav-link" href="#interplanetary">Interplanetary Orbit</a>
+        <a class="nav-item nav-link" href="#orbit">Orbital Rendezvous</a>
+      </div>
+    </div>
+    <a class="btn btn-primary" href="#top" role="button" id="btn-top">Top</a>
+  </nav>
+
+<header class="img-fluid header-bg">
+  <div class="stage-caption">
+    <h1 class="display-4">Orbital Mechanics</h1>
+    <p>Circular Motion, Escape Velocity, Retrograge Motion</p>
+  </div>
+</header>
+
+<main class="main-bg" id="top">
+
+  <div class="sticky-top main-nav">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Aerospace Notes</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Introduction
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="introduction.html#propulsion">Rocket Propulsion</a>
+                  <a class="dropdown-item" href="introduction.html#propulsion-two">Types of Propulsions</a>
+                  <a class="dropdown-item" href="introduction.html#rockets">Types of Rockets</a>
+                  <a class="dropdown-item" href="introduction.html#newton">Newton's Law of Motion</a>
+                  <a class="dropdown-item" href="introduction.html#equation">Ideal Rocket Eqn</a>
+                  <a class="dropdown-item" href="introduction.html#atomsphere">Atomspheric Drag</a>
+                  <a class="dropdown-item" href="introduction.html#control">Control System</a>
+                  <a class="dropdown-item" href="introduction.html#structural">Structural Integrity</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">More</a>
+                </div>
+              </li> <!-- Introduction -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Orbital Mechanics
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="orbital_mechanics.html#circular">Circular Motion</a>
+                  <a class="dropdown-item" href="orbital_mechanics.html#kepler">Kepler's Law of Planetary Motion</a>
+                  <a class="dropdown-item" href="orbital_mechanics.html#retrograde">Retrograge Motion</a>
+                  <a class="dropdown-item" href="orbital_mechanics.html#energy">Energy</a>
+                  <a class="dropdown-item" href="orbital_mechanics.html#escape">Escape Velocity</a>
+                  <a class="dropdown-item" href="orbital_mechanics.html#altitude">Changing Orbital Altitude</a>
+                  <a class="dropdown-item" href="orbital_mechanics.html#interplanetary">Interplanetary Orbit</a>
+                  <a class="dropdown-item" href="orbital_mechanics.html#orbit">Orbital Rendezvous</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">More</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Mircogravity and Human Physiology
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="mircogravity_and_human_physiology.html#weight">Weight</a>
+                  <a class="dropdown-item" href="mircogravity_and_human_physiology.html#mircogravity">Mircogravity</a>
+                  <a class="dropdown-item" href="mircogravity_and_human_physiology.html#experiments">Experiments</a>
+                  <a class="dropdown-item" href="mircogravity_and_human_physiology.html#mircogravity-human">(Human) Mircogravity</a>
+                  <a class="dropdown-item" href="mircogravity_and_human_physiology.html#circulatory">(Human) Circulatory System</a>
+                  <a class="dropdown-item" href="mircogravity_and_human_physiology.html#fluid">(Human) Fluid</a>
+                  <a class="dropdown-item" href="mircogravity_and_human_physiology.html#muscle">(Human) Muscle</a>
+                  <a class="dropdown-item" href="mircogravity_and_human_physiology.html#bone">(Human) Bone</a>
+                  <a class="dropdown-item" href="mircogravity_and_human_physiology.html#head">(Human) Head</a>
+                  <a class="dropdown-item" href="mircogravity_and_human_physiology.html#visual">(Human) Visual Orientation</a>
+                  <a class="dropdown-item" href="mircogravity_and_human_physiology.html#radiation">Radiation</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">More</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Support in Space
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="support_in_space.html#human">Human Needs</a>
+                  <a class="dropdown-item" href="support_in_space.html#eclss">ECLSS</a>
+                  <a class="dropdown-item" href="support_in_space.html#temperature">Temperature and Humidity</a>
+                  <a class="dropdown-item" href="support_in_space.html#oxygen">Supply Oxygen</a>
+                  <a class="dropdown-item" href="support_in_space.html#atomsphere">Atomsphere</a>
+                  <a class="dropdown-item" href="support_in_space.html#carbon">Carbon Dioxide Removal</a>
+                  <a class="dropdown-item" href="support_in_space.html#trace">Trace Contaminant Removal</a>
+                  <a class="dropdown-item" href="support_in_space.html#water">Water</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">More</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Extravehicular Activities
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="extravehicular_activity.html#spacesuit">Spacesuit</a>
+                  <a class="dropdown-item" href="extravehicular_activity.html#training">Training</a>
+                  <a class="dropdown-item" href="extravehicular_activity.html#stability">Stability</a>
+                  <a class="dropdown-item" href="extravehicular_activity.html#tools">Tools</a>
+                  <a class="dropdown-item" href="extravehicular_activity.html#future">Future Technology</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">More</a>
+                </div>
+              </li>
+            </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Go</button>
+        </form> <!-- Search -->
+      </div>
+    </nav>
+  </div> <!-- sticky-top -->
+
+  <section class="content mb-5">
+    <article id="circular" class="container mb-10">
+      <h1> Circular Motion </h1>
+      <p class="lead">
+        Requires the motion of gravitational attraction and centripetal forces <br>
+        <code><b><i>F(centripetal) = F(gravity)</i></b></code> <br>
+        <code><b><i>mv^2/r = GMm/r^2</i></b></code> <br>
+        <code><b><i>v^2 GM/r</i></b></code> <br>
+        <br>
+        We also need the critical infor <br>mation of Kepler's Third Law <br>
+        <code><b><i>R^3/T^2 = GM/4&pi;^2</i></b></code> <br>
+        <br>
+        <b><i>Low Earth Orbit Satellites</i></b> usually has a period of <b><i>90 minutes</i></b> <br>
+        if calculated they travel at 8km/sec <br>
+        <br>
+        The period for <b><i>Geostationary Orbit</i></b>, are the same as an Earth day; <b><i>24 hours</i></b> <br>
+        The radius for GEO sats. would be roughly 42 000 km. <br>
+        GEO Satellites are very usually as they will appear motionlessly in the sky and
+        are not subjected to atomspheric drag. <br>
+      </p>
+    </article> <!-- circular -->
+
+    <article id="kepler" class="container mb-10">
+      <h1> Kepler's Law of Planetary Motion </h1>
+      <p class="lead mb-5">
+        In astronomy, Kepler's laws of planetary motion are three scientific laws describing the motion of planets around the Sun.
+      </p>
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title text-center">Kelper's 1st Law</h4>
+          </div>
+          <div class="card-text card-block">
+            Kepler's 1st Law <b><i>(Law of Orbit)</i></b> involves <b><i>Stellar Parallax</i></b> where the motion of Earth
+            causes (when obversing a star) to move forth and back in the background. It states that
+            two objects <b><i>interact gravitationally</i></b>, they will experience an conic shape
+            (cross section of a cone on an angle)<br>
+            <br>
+            If the interaction are <b>permanent (gravitationally bounded orbits)</b>, then they
+            will experience an elliptic shape or an encase cyclinderical cross section. An example
+            of this is the Moon orbitting around Earth, or the Earth orbitting the Sun <br>
+            <br>
+            If the interaction are <b><i>not permanent (open orbits)</i></b>, then they will
+            undergoes an <b><i>parabolic or hyperbolic shape</i></b>. This concept of open orbit can be
+            found with the slingshot effect.<br>
+            <br>
+            <b><i>KEYWORDS TO NOTE : Ellipticity, eccentric, major axis, semi major axis</i></b>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title text-center">Kelper's 2nd Law</h4>
+          </div>
+          <div class="card-text card-block">
+            Kepler's 2nd Law <b><i>(Law of Area)</i></b> states that two objects whether in a closed
+            orbit or not, will have equal areas when joining the lines in the <b><i>equal time interval</i></b> <br>
+            It provides that an object in elliptic orbits are not subjected to a constant velocity,
+            rather when the <b><i>object is closer</i></b>, its <b><i>travels faster</i></b> compared <br>
+            to an <b><i>object that orbits further from the central object</i></b>. <br>
+            <br>
+            An <b><i>Apogee</i></b> is point in the orbit of the moon or a satellite at which it is furthest
+            from the earth. <br>
+            <br>
+            A <b><i>Perigee</i></b> is point in the orbit of the moon or a satellite at which it is closest
+            <br>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title text-center">Kelper's 3rd Law</h4>
+          </div>
+          <div class="card-text card-block">
+            Kepler's 3rd Law <b><i>(Law of Period)</i></b>states that the total mass of the two focal objects time square of the period is proportional to the cube of the size of the orbit, which <br>
+            for an elliptical orbit is the semi-major axis of the ellipse. <br>
+            <br>
+            <code><b><i> R^3/T^2 = GM/4&pi;^2 </i></b></code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </article> <!-- kepler -->
+
+    <article id="retrograde" class="container mb-10">
+      <h1> Retrograde Motion </h1>
+      <p class="lead">
+        When an objects moving is motion within a object that it is orbiting, it is known as an <b><i>epicycle.</i></b> <br>
+         However, epicycles are used in <b><i>Geocentric</i></b>, stating the <b><i>Earth was at the centre of the Solar System.</i></b> <br>
+         Where as, <b><i>Heliocentric</i></b>, suggested the <b><i>Sun was as the centre of the Solar System.</i></b> <br>
+         <br>
+         Both able to undergoes retrograde motion, as such where a the planet at start moves in a
+         straight motion, but turn around in a forming a slim oval before moving in the exact same straight motion.
+      </p>
+    </article> <!-- retrograde -->
+
+    <article id="energy" class="container mb-10">
+      <h1 class="mb-5"> Energy of Orbit </h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-block">
+              <h6> KE </h6>
+              <h3 class="card-title">Kinetic Energy</h3>
+              <p class="card-text">
+                The energy of an object, also known as Kinetic energy is given by 1/2(m)(v^2)
+                and as the is subjected to gravity, its velocity is v^2 = GM/r
+                Hence: <br>
+                <br>
+              </p>
+            </div>
+            <div class="card-footer">
+              <code><b><i>KE = GMm/2R</code></i></b>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-block">
+              <h6> GPE </h6>
+              <h3 class="card-title">Gravitational Potential Energy</h3>
+              <p class="card-text">
+                Since an objected will always to subjected to a planet's gravity, no matter the there radius, they will experience GPE
+                Hence scientist take the reference point of max distance, ∞
+                Hence: <br>
+                <br>
+              </p>
+            </div>
+            <div class="card-footer">
+              <code><b><i>GPE = - GMm /r</code></i></b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article> <!-- energy -->
+
+    <article id="escape" class="container mb-10">
+      <div class="row">
+        <div class="col-lg-6" style="width: 75%;">
+          <h6> Escape Velocity </h6>
+          <h1> Newton's Mountaintop Cannon </h1>
+          <p class="lead">
+            A cannonball is placed a the top of high mountain. It is shot at different velocity
+            Earth.
+          </p>
+          <ul class="lead">
+            <li><b><i>Slow Velocity</i></b> : The ball is be subjected by gravity and fall to the ground. <br></li>
+            <li><b><i>Faster Velocity</i></b> : The ball will have the same effect, except fall further away. <br></li>
+            <li><b><i>Orbital Velocity</i></b> : The ball will continue to fall infinitly due to the curvature of <br></li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-lg-offset-1">
+            <img style="margin-top: 100px; margin-left: 150px;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Newton_Cannon.svg/240px-Newton_Cannon.svg.png">
+          </div>
+      </div>
+      <h2> Escape Velocity</h2>
+        <p class="lead">
+          The <b><i>minimum velocity</i></b> required to propel a rocket towards <b><i>infinity</i></b> <br>
+          and <b><i>not fall back</i></b> under the influence of gravitation attraction. <br>
+          Hence, <br>
+          <code><b><i>GPE + KE = 0</i></b></code> <br>
+          <code><b><i>v(escape) = (GM/R^2)^1/2</i></b></code> <br>
+          <br>
+          <b><i>IMPORRANT NOTE that in reality, a projectile object, isn't throw wih respect the the
+            horizontal, as Earth is round, but since for simplicity and the insignificant, we treat it as flat.</i></b><br>
+        </p>
+    </article> <!-- escape -->
+
+    <article id="altitude" class="container mb-10">
+      <h2> Changing Orital Altitude </h2>
+      <p class="lead"> There are two types of methods to change the orbital altitude,
+      </p>
+        <ul class="lead">
+          <li><b><i>Posigrade</i></b>: Increases velocity, whilst increase size of orbit <br></li>
+          <li><b><i>Retrograde</i></b>: Decreases velocity, whilst decrease size of orbit <br></li>
+        </ul>
+      <p class="lead mb-10">
+        Another methods, this for transfering orbits from one planet to another is through <b><i>Hohmann Transfer Orbit</i></b> where in order to jump to another orbit <br>
+        of a planet, they must undergoes another burn. <br>
+      </p>
+
+      <h2> Changing Orbital Inclination </h2>
+      <p class="lead"> To change an orbital incline is changing its angle each which its makes with the Equator. <br>
+          To achieve this, the satellite, must be subjected to an <b><i>90 degree (perpendicular angle)</i></b> to the
+          satellite, to create that upwards motion, to increase its inclination of the satellite orbit.
+    </article> <!-- altitude -->
+
+    <article id="interplanetary" class="container mb-10">
+      <h2> Interplanetary Orbit </h2> <br>
+      <br>
+      <p class="lead">
+        Interplanetary Orbits is dealt with <b>Gravity Asssist</b> or the <b> Slingshot Effect</b>.
+          Refer to Information on HSC Physic.
+      </p>
+    </article>
+
+    <article id="orbit" class="container mb-10">
+      <h2> Orbital Rendezvous </h2>
+      <p class="lead">
+        This section tries to explains the how rockets or supply spacecrafts, are used to meet
+        with the satellites in orbit. It's not as simple as launching it up to the point, and
+        hence astronuats must consider the <b><i>Rendezvous Points</i></b> to help acheive a safe and
+        <b><i>successful contact of shuttle and satellites in orbit</i></b>. <br>
+        <br>
+        The most important aspect is the <b><i>Timeliness</i></b> as the supply shuttle must be
+        launched at the right time to the right orbits, to reach its destination. Another factor is
+        an <b><i>intermediate Orbit</i></b> the space craft must orbit. It should be placed <b><i>lower than
+        the destination's orbits, as a lower obrit provides a faster velocity to catch up with the destinated satellite's orbits</i></b>. <br>
+        <br>
+        Once you reach their orbits, there are three possible outcomes, the spacecraft is <b><i>infront, reachable, or behind</i></b>.<br>
+        <ul class="lead">
+          <li>
+            <b><i>Infront</i></b>: Since the spacecraft is infront, it must <b><i>move quicker</i></b> for the
+            orbital satellite to catch up and be reached. Hence the spacecraft should undergo a
+            <b><i>posigrade</i></b> to increase velocity and increase its obital altitude. This in turns
+            of increasing altitude, make the satellite orbits faster and overtake the spacecraft. <br>
+          </li>
+          <li>
+            <b><i>Behind</i></b>: Since the spacecraft is behind, it must <b><i>slow down</i></b> for the orbital
+            satellite to catch up and be reached. Hence the spacecraft should undergo a <b><i>retrograde</i></b>
+            to decrease velocity and decrease its obital altitude. This in turns of decreasing altitude, make the
+            satellite orbits slower so the spacecraft can catch up.<br>
+          </li>
+        </ul>
+      </p>
+    </article> <!-- orbit -->
+  </section>
+</main> <!-- main-bg -->
+
+<nav aria-label="breadcrumb mb-5 w-25 main-bg">
+  <ol class="breadcrumb breadcrumb-width">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="Propulsion">Orbital Mechanics</li>
+  </ol>
+</nav>
+
+<footer class="footer-bg">
+    <div class="container">
+      <p class="text-center mb-3">Thanks For Visiting</p>
+      <div class="lead container">
+          <div class="row">
+            <div class="col">
+              <h6> Follow Me </h6>
+              <ul class="footer-list">
+                <li> <a href="https://github.com/Pitatoran/aerospace" target="_blank">Facebook </a>
+                  <span class="badge badge-primary badge-pill">830 Likes</span>
+                </li>
+                <li> <a href="https://github.com/Pitatoran/aerospace" target="_blank">Twitter </a>
+                  <span class="badge badge-info badge-pill">12 Followers</span>
+                </li>
+                <li> <a href="https://github.com/Pitatoran/aerospace" target="_blank">Youtube </a>
+                  <span class="badge badge-danger badge-pill">8852 Subscribers</span>
+                </li>
+                <li> <a href="https://github.com/Pitatoran/aerospace" target="_blank">Linkedln</a> </li>
+              <ul>
+            </div>
+            <div class="col">
+              <h6> Information </h6>
+              <ul class="footer-list">
+                <li> <a href="https://github.com/Pitatoran/aerospace" target="_blank">About </a> </li>
+                <li> <a href="https://github.com/Pitatoran/aerospace" target="_blank">Contact </a> </li>
+                <li> <a href="https://github.com/Pitatoran/aerospace" target="_blank">Github </a> </li>
+                <li> <p> ↑ Star my repos on Github ⭐ </li>
+              <ul>
+            </div>
+          </div>
+        </div>
+        <p class="disclaimer">
+          This website was created as a hobby and interest in Areospace and Web Development. <br>
+          These are merely my collections of notes I've researched. If there is a problem, please contact me
+          on Github: Pitatoran. <br>
+          Created: 31/12/17 <br>
+          Publish on Github Pages: 20/06/18 <br>
+        </p>
+        <p class="footer-copyright">Copyright © 2018 · All Rights Reserved · Pitatoran </p>
+    </div>
+  <secction>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        var topoffset = 70; //variable for menu height
+
+        //Use smooth scrolling when clicking on navigation
+        $('.navbar-nav a').click(function() {
+          if (location.pathname.replace(/^\//,'') ===
+            this.pathname.replace(/^\//,'') &&
+            location.hostname === this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top-topoffset
+              }, 500);
+              return false;
+            } //target.length
+          } //click function
+        }); //smooth scrolling
+
+      });
+    </script>
+  </body>
+</html>

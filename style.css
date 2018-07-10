@@ -1,0 +1,152 @@
+html,
+body {
+  height: 100%;
+}
+
+/* Header
+========= */
+.header-bg {
+  background: url('http://www.spacex.com/sites/spacex/files/styles/featured_news_widget_image/public/field/image/dragoncrew.8k.jpg?itok=-2W4puKw') center center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.main-bg {
+  background: #e9e9e9;
+}
+
+.main {
+  height: 100vh;
+}
+
+.content {
+  width: 75%;
+  border-radius: 10px;
+  background: white;
+  padding: 70px 0px 70px 20px;
+  margin-top: 70px;
+  margin-left: 50px;
+}
+
+.mb-10 {
+  margin-bottom: 150px;
+}
+
+.stage-caption {
+  font-size: 1.4rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stage-caption h1 {
+  font-weight: bold;
+}
+
+/* Side Nav
+=========== */
+.ml-nav-introduction {
+  left: 1150px;
+  width: 17%;
+  background: #e9e9e9;
+  position: fixed;
+  bottom: 50vh;
+  border-radius: 10px;
+}
+
+.ml-nav-orbital-mechanics {
+  left: 1150px;
+  width: 17%;
+  background: #e9e9e9;
+  position: fixed;
+  bottom: 45vh;
+  border-radius: 10px;
+}
+
+.ml-nav-support-in-space {
+  left: 1150px;
+  width: 17%;
+  background: #e9e9e9;
+  position: fixed;
+  bottom: 43vh;
+  border-radius: 10px;
+}
+
+.ml-nav-mircogravity-and-human-physiology {
+  left: 1150px;
+  width: 17%;
+  background: #e9e9e9;
+  position: fixed;
+  bottom: 31vh;
+  border-radius: 10px;
+}
+
+.ml-nav-extra {
+  left: 1150px;
+  width: 17%;
+  background: #e9e9e9;
+  position: fixed;
+  bottom: 65vh;
+  border-radius: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Footer
+========= */
+.footer-bg {
+  padding-top: 50px;
+  height: 370px;
+  background: #f3f3f3;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding-left: 0px;
+  font-size: 17px;
+}
+
+.footer-copyright {
+  text-align: right;
+  font-size: 15px;
+}
+
+.disclaimer {
+  font-size: 10px;
+  text-align: center;
+}
+
+/* Top Btn
+========== */
+#btn-top {
+  position: fixed;
+  right: 45px;
+  bottom: 20px;
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 100px) {
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .footer-background {
+    padding-top: 50px;
+    height: 450px;
+  }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+ }
